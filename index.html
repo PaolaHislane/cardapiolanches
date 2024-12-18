@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Lanches e Bebidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <header>
+                <img src="/img/logo-removebg-preview.png" alt="Logo" class="logo"> <!-- Logo adicionada aqui -->
+                <h1>Cardápio</h1>
+            </header>
+    
+            <!-- O restante do código continua... -->
+        </div>
+
+        <section class="menu">
+            <!-- Lanches -->
+            <div class="category">
+                <h2>Lanches</h2>
+                <div class="product">
+                    <img src="/img/Hambúrguer Clássico.jpg" alt="Hambúrguer Clássico">
+                    <div class="info">
+                        <h3>Hambúrguer Clássico</h3>
+                        <p class="price">R$ 20,00</p>
+                        <p class="description">Hambúrguer suculento, com carne de qualidade, alface, tomate e molho especial.</p>
+                        <input type="checkbox" id="hamburguer-clasico" value="20.00" data-name="Hambúrguer Clássico">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="/img/Cheeseburger.jpg" alt="Cheeseburger">
+                    <div class="info">
+                        <h3>Cheeseburger</h3>
+                        <p class="price">R$ 22,00</p>
+                        <p class="description">Deliciosa combinação de carne, queijo cheddar, alface e tomate em um pão macio.</p>
+                        <input type="checkbox" id="cheeseburger" value="22.00" data-name="Cheeseburger">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="/img/Hot Dog.jpg" alt="Hot Dog">
+                    <div class="info">
+                        <h3>Hot Dog</h3>
+                        <p class="price">R$ 15,00</p>
+                        <p class="description">Salsicha de alta qualidade com molho de mostarda, ketchup e cebola caramelizada.</p>
+                        <input type="checkbox" id="hotdog" value="15.00" data-name="Hot Dog">
+                    </div>
+                </div>
+
+                <!-- Adicionar mais itens conforme necessário -->
+            </div>
+
+            <!-- Bebidas -->
+            <div class="category">
+                <h2>Bebidas</h2>
+
+                <div class="product">
+                    <img src="/img/Refrigerante Lata.jpg" alt="Refrigerante Lata">
+                    <div class="info">
+                        <h3>Refrigerante Lata</h3>
+                        <p class="price">R$ 6,00</p>
+                        <p class="description">Escolha entre Coca-Cola, Pepsi ou Guaraná. Lata geladinha!</p>
+                        <input type="checkbox" id="refrigerante-lata" value="6.00" data-name="Refrigerante Lata">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="/img/Refrigerante 2L.jpg" alt="Refrigerante 2L">
+                    <div class="info">
+                        <h3>Refrigerante 2L</h3>
+                        <p class="price">R$ 15,00</p>
+                        <p class="description">Refrigerante em garrafa de 2L para você e sua família curtirem juntos.</p>
+                        <input type="checkbox" id="refrigerante-2l" value="15.00" data-name="Refrigerante 2L">
+                    </div>
+                </div>
+
+                <!-- Adicionar mais bebidas conforme necessário -->
+            </div>
+
+            <!-- Sucos -->
+            <div class="category">
+                <h2>Sucos</h2>
+
+                <div class="product">
+                    <img src="/img/Suco de Laranja Natural.jpg" alt="Suco de Laranja">
+                    <div class="info">
+                        <h3>Suco de Laranja Natural</h3>
+                        <p class="price">R$ 8,00</p>
+                        <p class="description">Suco fresco e natural de laranja, ideal para refrescar seu dia.</p>
+                        <input type="checkbox" id="suco-laranja" value="8.00" data-name="Suco de Laranja">
+                    </div>
+                </div>
+
+                <!-- Adicionar mais sucos conforme necessário -->
+            </div>
+
+            <!-- Formulário de Pedido -->
+            <div class="order-summary">
+                <h3>Resumo do Pedido</h3>
+                <p id="items-selected">Nenhum item selecionado</p>
+                <p><strong>Total: R$ <span id="total-price">0.00</span></strong></p>
+
+                <label for="payment-method">Forma de Pagamento:</label>
+                <select id="payment-method">
+                    <option value="cartao">Cartão</option>
+                    <option value="dinheiro">Dinheiro</option>
+                </select>
+
+                <button id="whatsapp-btn">Enviar Pedido pelo WhatsApp</button>
+            </div>
+
+            <!-- Contato -->
+            <div class="contact">
+                <h3>Contato</h3>
+                <p>Telefone: <strong>(61) 9 9253-2093 </strong></p>
+                <p>Email: <a href="mailto:contato@lanchonete.com">contato@lanchonete.com</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Lanchonete - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
